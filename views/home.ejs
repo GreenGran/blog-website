@@ -4,13 +4,13 @@
 
 <p> <%= paragraphContant %> </p>
 
-<% posts.forEach(function(post){ %>
+<% postsArry.forEach(function(post){ %>
 
     <h2>
         <%= post.title ;%>
     </h2>
     <p>
-        <%= post.body.slice(0, 100) ;%> <a href= "posts/<%= post.title;%>" >... Read More</a>
+        <%= post.body.slice(0, 100) ;%> <a href= "posts/<%= post._id;%>" >... Read More</a>
     </p>
 
 <% }) %>
